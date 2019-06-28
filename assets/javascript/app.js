@@ -1,5 +1,5 @@
 // Initial array of animals
-var animals = ["Cat", "Dog", "Elephant", "rat"];
+var animals = ["Cat", "Panda", "Elephant", "rat"];
 var state;
 
 // Function for displaying animal data
@@ -75,7 +75,7 @@ $("#buttons-view").on("click", ".gifs", function () {
         var p = $("<p>").text("Rating: " + results[i].rating);
 
         // Creating and storing an image tag
-        var animalImage = $("<img class=col-md-4>");
+        var animalImage = $("<img>");
         // Setting the src attribute of the image to a property pulled off the result item
         animalImage.attr("src", results[i].images.fixed_height_still.url);
         animalImage.attr({ 'data-animate': results[i].images.fixed_height.url });
@@ -100,7 +100,7 @@ $("#buttons-view").on("click", ".gifs", function () {
 });
 
 
-$("#gifs-appear-here").on("click", function () {
+$("#gifs-appear-here").on("click",'.gifs img', function () {
   // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
   state = $(this).attr("data-state");
 

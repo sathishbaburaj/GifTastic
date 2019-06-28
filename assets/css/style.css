@@ -1,12 +1,44 @@
-button,
-    div,
-    form,
-    input {
-      margin: 10px;
-    }
+button, 
+form {
+	margin: 10px;
+}
 
-    #gifs-appear-here{
 
-        float: left;
-        width:25%;
-    }
+.jumbotron {
+  text-align: center;
+	font-weight: bold;
+	background-color:rgb(70, 43, 226);
+	color:black;
+
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+button, html input[type=button],  input[type=submit] {
+	background-color: rgb(70, 43, 226);
+	border:rgb(70, 43, 226);
+	color: black;
+}
+
+input{
+	background-color: #dfdf88 ;
+}
+
+
+/*updates gif photo to show left to right versus just vertical */
+.gifs {
+	padding: 10px;
+	display: inline-block;
+}
+
+p{
+	background-color: rgb(70, 43, 226);
+	color:black;	
+  padding: 0px;
+  text-align: center;
+  
+}
